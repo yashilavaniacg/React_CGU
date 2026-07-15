@@ -14,7 +14,7 @@ function App() {
 
         {/* ── Home ─────────────────────────────────────── */}
         <section id="home" className="section home-section">
-          <h1 className="home-heading">Hi, I'm Tanisha Sharma</h1>
+          <h1 className="home-heading">Hi, I'm Yashi Lavania</h1>
           <p className="home-sub">
             React Developer &amp; Computer Science Student
           </p>
@@ -29,7 +29,7 @@ function App() {
         <section id="profile" className="section">
           <h2 className="section-title">Profile</h2>
           <ProfileCard
-            name="Tanisha Sharma"
+            name="Yashi Lavania"
             bio="React developer and Computer Science student passionate about web development and AI."
             status="Open to opportunities"
           />
@@ -41,15 +41,15 @@ function App() {
           <div className="contact-card">
             <div className="contact-row">
               <span className="contact-label">Name</span>
-              <span className="contact-value">Tanisha Sharma</span>
+              <span className="contact-value">Yashi Lavania</span>
             </div>
             <div className="contact-row">
               <span className="contact-label">Email</span>
-              <span className="contact-value">tanisha@example.com</span>
+              <span className="contact-value">yashi@example.com</span>
             </div>
             <div className="contact-row">
               <span className="contact-label">GitHub</span>
-              <span className="contact-value">github.com/tanishasharma</span>
+              <span className="contact-value">github.com/yashilavania</span>
             </div>
             <div className="contact-row">
               <span className="contact-label">Location</span>

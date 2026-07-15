@@ -3,7 +3,7 @@ import './Navbar.css'
 function Navbar() {
   return (
     <nav className="navbar">
-      <span className="navbar-brand">Tanisha Sharma</span>
+      <span className="navbar-brand">Yashi Lavania</span>
       <ul className="navbar-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#profile">Profile</a></li>
