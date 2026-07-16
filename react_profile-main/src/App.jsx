@@ -1,82 +1,50 @@
-import { useState } from 'react'
-import ProfileCard from './components/ProfileCard'
-import Navbar from './components/Navbar'
-import './App.css'
+import { useState } from "react";
+import ProfileCard from "./components/ProfileCard";
+import Navbar from "./components/Navbar";
+import "./App.css";
 
 function App() {
-  const [inputValue, setInputValue] = useState('')
+  const [inputValue, setInputValue] = useState("");
 
   return (
     <>
       <Navbar />
 
       <div className="app">
-
-        {/* ── Home ─────────────────────────────────────── */}
-        <section id="home" className="section home-section">
-          <h1 className="home-heading">Hi, I'm Yashi Lavania</h1>
-          <p className="home-sub">
-            React Developer &amp; Computer Science Student
-          </p>
-          <p className="home-desc">
-            Passionate about building modern web applications, exploring AI,
-            and turning ideas into interactive experiences.
-          </p>
-          <a href="#profile" className="btn-cta">View Profile</a>
+        <section id="home" className="section">
+          <h1>Hi, I'm Yashi Lavania</h1>
+          <p>React Developer | Computer Science Student</p>
         </section>
 
-        {/* ── Profile ──────────────────────────────────── */}
         <section id="profile" className="section">
-          <h2 className="section-title">Profile</h2>
+          <h2>Profile</h2>
+
           <ProfileCard
             name="Yashi Lavania"
-            bio="React developer and Computer Science student passionate about web development and AI."
-            status="Open to opportunities"
+            bio="React Developer and Computer Science Student"
+            status="Open to Opportunities"
           />
         </section>
 
-        {/* ── Contact ──────────────────────────────────── */}
         <section id="contact" className="section">
-          <h2 className="section-title">Contact</h2>
-          <div className="contact-card">
-            <div className="contact-row">
-              <span className="contact-label">Name</span>
-              <span className="contact-value">Yashi Lavania</span>
-            </div>
-            <div className="contact-row">
-              <span className="contact-label">Email</span>
-              <span className="contact-value">yashi@example.com</span>
-            </div>
-            <div className="contact-row">
-              <span className="contact-label">GitHub</span>
-              <span className="contact-value">github.com/yashilavania</span>
-            </div>
-            <div className="contact-row">
-              <span className="contact-label">Location</span>
-              <span className="contact-value">India</span>
-            </div>
+          <h2>Contact Me</h2>
 
-            <div className="message-box">
-              <h3 className="message-label">Send a Message</h3>
-              <input
-                className="message-input"
-                type="text"
-                placeholder="Type something..."
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-              />
-              {inputValue && (
-                <p className="message-preview">
-                  You typed: <span>{inputValue}</span>
-                </p>
-              )}
-            </div>
-          </div>
+          <input
+            type="text"
+            placeholder="Type your message..."
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+          />
+
+          {inputValue && (
+            <p>
+              Preview: <span>{inputValue}</span>
+            </p>
+          )}
         </section>
-
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

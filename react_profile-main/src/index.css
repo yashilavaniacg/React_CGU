@@ -10,11 +10,167 @@ html {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff8f5;
-  color: #3b2a1a;
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e3a8a,
+    #2563eb
+  );
+  color: white;
   min-height: 100vh;
 }
 
 #root {
   width: 100%;
+}
+
+.app {
+  width: 100%;
+}
+
+.section {
+  padding: 80px 10%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #60a5fa;
+}
+
+/* Home Section */
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-heading {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #60a5fa;
+}
+
+.home-sub {
+  font-size: 1.5rem;
+  color: #dbeafe;
+  margin-bottom: 15px;
+}
+
+.home-desc {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
+  color: #cbd5e1;
+}
+
+/* Buttons */
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn-cta,
+.btn-secondary {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  margin: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-cta {
+  background: #60a5fa;
+  color: white;
+}
+
+.btn-secondary {
+  border: 2px solid #60a5fa;
+  color: white;
+}
+
+.btn-cta:hover,
+.btn-secondary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(96, 165, 250, 0.4);
+}
+
+/* About Card */
+
+.info-card {
+  max-width: 800px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+/* Skills */
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 18px 25px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: scale(1.08);
+  background: #2563eb;
+}
+
+/* Contact */
+
+.contact-card {
+  max-width: 800px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.contact-label {
+  font-weight: bold;
+  color: #93c5fd;
+}
+
+.message-box {
+  margin-top: 25px;
+}
+
+.message-input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.message-preview {
+  margin-top: 15px;
+  color: #bfdbfe;
 }
